@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2F02E033B963FAD4112487E /* Pods_lottie_animation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C9A4024FC5A1A614941C4E /* Pods_lottie_animation.framework */; };
 		FE716EED22EE14ED003CC146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE716EEC22EE14ED003CC146 /* AppDelegate.swift */; };
 		FE716EEF22EE14ED003CC146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE716EEE22EE14ED003CC146 /* ViewController.swift */; };
 		FE716EF222EE14ED003CC146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE716EF022EE14ED003CC146 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08C9A4024FC5A1A614941C4E /* Pods_lottie_animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lottie_animation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFD21198E0BC05B20CFB497 /* Pods-lottie-animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottie-animation.debug.xcconfig"; path = "Target Support Files/Pods-lottie-animation/Pods-lottie-animation.debug.xcconfig"; sourceTree = "<group>"; };
+		CB577DDE4D55057960EDC0E8 /* Pods-lottie-animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottie-animation.release.xcconfig"; path = "Target Support Files/Pods-lottie-animation/Pods-lottie-animation.release.xcconfig"; sourceTree = "<group>"; };
 		FE716EE922EE14ED003CC146 /* lottie-animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lottie-animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE716EEC22EE14ED003CC146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE716EEE22EE14ED003CC146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F02E033B963FAD4112487E /* Pods_lottie_animation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8088B7316827184DD7CB78E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08C9A4024FC5A1A614941C4E /* Pods_lottie_animation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1E02644869739FD54ED94CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FFD21198E0BC05B20CFB497 /* Pods-lottie-animation.debug.xcconfig */,
+				CB577DDE4D55057960EDC0E8 /* Pods-lottie-animation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FE716EE022EE14ED003CC146 = {
 			isa = PBXGroup;
 			children = (
 				FE716EEB22EE14ED003CC146 /* lottie-animation */,
 				FE716EEA22EE14ED003CC146 /* Products */,
+				D1E02644869739FD54ED94CF /* Pods */,
+				B8088B7316827184DD7CB78E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE716EFE22EE14EF003CC146 /* Build configuration list for PBXNativeTarget "lottie-animation" */;
 			buildPhases = (
+				C7F097639E2F8C3A0F6D72D5 /* [CP] Check Pods Manifest.lock */,
 				FE716EE522EE14ED003CC146 /* Sources */,
 				FE716EE622EE14ED003CC146 /* Frameworks */,
 				FE716EE722EE14ED003CC146 /* Resources */,
+				963CC0E11DC907A579C62BCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		963CC0E11DC907A579C62BCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lottie-animation/Pods-lottie-animation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lottie-animation/Pods-lottie-animation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7F097639E2F8C3A0F6D72D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lottie-animation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE716EE522EE14ED003CC146 /* Sources */ = {
@@ -284,6 +358,7 @@
 		};
 		FE716EFF22EE14EF003CC146 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFD21198E0BC05B20CFB497 /* Pods-lottie-animation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +377,7 @@
 		};
 		FE716F0022EE14EF003CC146 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB577DDE4D55057960EDC0E8 /* Pods-lottie-animation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
