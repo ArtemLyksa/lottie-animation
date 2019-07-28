@@ -11,9 +11,9 @@
 		FE716EED22EE14ED003CC146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE716EEC22EE14ED003CC146 /* AppDelegate.swift */; };
 		FE716EEF22EE14ED003CC146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE716EEE22EE14ED003CC146 /* ViewController.swift */; };
 		FE716EF222EE14ED003CC146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE716EF022EE14ED003CC146 /* Main.storyboard */; };
-		FE716EF522EE14ED003CC146 /* lottie_animation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE716EF322EE14ED003CC146 /* lottie_animation.xcdatamodeld */; };
 		FE716EF722EE14EF003CC146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE716EF622EE14EF003CC146 /* Assets.xcassets */; };
 		FE716EFA22EE14EF003CC146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE716EF822EE14EF003CC146 /* LaunchScreen.storyboard */; };
+		FE716F0422EE15E7003CC146 /* lottie-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = FE716F0322EE15E7003CC146 /* lottie-animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		FE716EEC22EE14ED003CC146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE716EEE22EE14ED003CC146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE716EF122EE14ED003CC146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FE716EF422EE14ED003CC146 /* lottie_animation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lottie_animation.xcdatamodel; sourceTree = "<group>"; };
 		FE716EF622EE14EF003CC146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE716EF922EE14EF003CC146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE716EFB22EE14EF003CC146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE716F0322EE15E7003CC146 /* lottie-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-animation.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,6 @@
 				3FFD21198E0BC05B20CFB497 /* Pods-lottie-animation.debug.xcconfig */,
 				CB577DDE4D55057960EDC0E8 /* Pods-lottie-animation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,13 +82,29 @@
 			children = (
 				FE716EEC22EE14ED003CC146 /* AppDelegate.swift */,
 				FE716EEE22EE14ED003CC146 /* ViewController.swift */,
+				FE716F0222EE15C0003CC146 /* Supporting Files */,
+			);
+			path = "lottie-animation";
+			sourceTree = "<group>";
+		};
+		FE716F0122EE15B7003CC146 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FE716EF022EE14ED003CC146 /* Main.storyboard */,
 				FE716EF622EE14EF003CC146 /* Assets.xcassets */,
 				FE716EF822EE14EF003CC146 /* LaunchScreen.storyboard */,
-				FE716EFB22EE14EF003CC146 /* Info.plist */,
-				FE716EF322EE14ED003CC146 /* lottie_animation.xcdatamodeld */,
 			);
-			path = "lottie-animation";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE716F0222EE15C0003CC146 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE716F0122EE15B7003CC146 /* Resources */,
+				FE716EFB22EE14EF003CC146 /* Info.plist */,
+				FE716F0322EE15E7003CC146 /* lottie-animation.json */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +170,7 @@
 				FE716EFA22EE14EF003CC146 /* LaunchScreen.storyboard in Resources */,
 				FE716EF722EE14EF003CC146 /* Assets.xcassets in Resources */,
 				FE716EF222EE14ED003CC146 /* Main.storyboard in Resources */,
+				FE716F0422EE15E7003CC146 /* lottie-animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +230,6 @@
 			files = (
 				FE716EEF22EE14ED003CC146 /* ViewController.swift in Sources */,
 				FE716EED22EE14ED003CC146 /* AppDelegate.swift in Sources */,
-				FE716EF522EE14ED003CC146 /* lottie_animation.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +378,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HY885L7L9;
-				INFOPLIST_FILE = "lottie-animation/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/lottie-animation/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +398,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HY885L7L9;
-				INFOPLIST_FILE = "lottie-animation/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/lottie-animation/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,19 +433,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FE716EF322EE14ED003CC146 /* lottie_animation.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FE716EF422EE14ED003CC146 /* lottie_animation.xcdatamodel */,
-			);
-			currentVersion = FE716EF422EE14ED003CC146 /* lottie_animation.xcdatamodel */;
-			path = lottie_animation.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FE716EE122EE14ED003CC146 /* Project object */;
 }
